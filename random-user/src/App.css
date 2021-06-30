@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.profil {
+  position: relative;
+  background-color: rgb(184, 185, 185);
+  padding: 2rem;
+}
+
+.profil__img {
+  border-radius: 50%;
+  object-fit: contain;
+  border: 5px solid whitesmoke;
+  z-index: 2;
+
+}
+
+button {
+  border: none;
+  margin: 0 .5rem;
+  cursor: pointer;
+}
+.icon {
+  background: whitesmoke;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: rgb(38, 121, 93);
+}
