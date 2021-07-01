@@ -12,6 +12,7 @@ function App() {
   const [categories, setCategories] = useState(allCategories);
 
   const filterItems = (category) => {
+    // si le button sur lequel on clique est all alors on affiche tout le menu
     if (category === 'all') {
       setMenuItems(items);
       return;
