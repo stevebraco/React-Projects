@@ -16,6 +16,8 @@ function App() {
       setMenuItems(items);
       return;
     }
+    //La méthode filter() crée et retourne un nouveau tableau contenant tous les éléments du tableau d'origine qui remplissent une condition déterminée par la fonction callback.
+    // on stock dans le useState la valeur du button category qui est égal à item.category dans notre data.
     const newItems = items.filter((item) => item.category === category);
     setMenuItems(newItems);
   };
