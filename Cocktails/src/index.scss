@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+body {
+    font-family: 'Lato', sans-serif;}
+h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+}
+h3 {
+    font-size: 1.8rem;
+    letter-spacing: 1.75px;
+}
+h4 {
+    font-size: 1.5rem;
+}
+a {
+    text-decoration: none;
+}
+.section__title {
+    padding: 1rem 0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.img-medium {
+    max-width: 15rem;
+    margin-bottom: .5rem;
+}
+.img-large {
+    max-width: 30rem;
+    margin-bottom: .5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: rgb(25, 87, 255);
+    color: white;
+    transition: .3s;
+    &:hover {
+        opacity: .7;
+    }
+
+}
+.nav {
+    background-color: whitesmoke;
+    &__center {
+        height: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+    }
+}
+
+
+.cocktail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container {
+        position: relative;
+        border-radius: 20px;
+        margin: 1rem 0;
+        padding: 1rem;
+        box-shadow: 0 0 20px lightgray;
+        overflow: hidden;
+        transition: .5s;
+
+       
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 8px;
+            position: absolute;
+            background-color: rgb(25, 87, 255);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+
+        }
+        &:hover {
+            transform: translateY(-10px);
+        }
+        &:hover .cocktail__img {
+            transform: scale(1.03);
+        }
+    }
+
+    &__img {
+        border-radius: 20px;
+        transition: .5s;
+
+    }
+
+    &__glass {
+        padding: .5rem 0;
+    }
+
+    &__info {
+        color: gray;
+    }
+
+    &__name {
+    }
+}
+
+.singleCocktail {
+    &__data {
+        display: inline-block;
+        text-transform: capitalize;
+        margin: .5rem;
+        padding: .5rem 1rem;
+        background-color: rgba(25, 86, 255, 0.26);
+        color: rgb(25, 87, 255);
+
+    }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .page-btn {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(25, 86, 255, 0.26);
+        border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: .5s;
+  }
+  .active-btn {
+    background-color: rgba(25, 86, 255, 0.26);
+    color: rgb(25, 87, 255);
+  }
+  .prev-btn,
+  .next-btn {
+    background: transparent;
+    border-color: transparent;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
